@@ -20,7 +20,6 @@ export class DispatchShipmentService implements IDispatchShipmentUseCase {
    * que se encuentren en la zona especificada.
    */
   private async getDriverCandidates(zone: string): Promise<DriverCandidate[]> {
-    console.log(">>>>>>>>>>>>>>>>>> ZONE ", zone)
     try {
       const response = await axios.get(`http://api-gateway:5000/driver/api/zone/${zone}`);
       return response.data;

@@ -14,8 +14,6 @@ export class EventPublisher {
 
   /**
    * Publica un evento en el topic especificado.
-   * @param topic El topic de Kafka.
-   * @param event El evento a publicar.
    */
   public async publish(topic: string, event: any): Promise<void> {
     await this.kafkaProducer.send(topic, event);
