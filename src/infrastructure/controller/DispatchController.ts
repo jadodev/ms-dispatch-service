@@ -1,5 +1,3 @@
-// src/infrastructure/controller/DispatchController.ts
-
 import { Router, Request, Response } from 'express';
 import { DispatchShipmentService } from '../../application/service/DispatchShipmentService';
 
@@ -23,7 +21,6 @@ export function createDispatchController(dispatchService: DispatchShipmentServic
       const assignment = await dispatchService.execute(dto);
       res.status(201).json(assignment);
     } catch (error: any) {
-      console.error("Error assigning shipment:", error);
       res.status(400).json({ error: error.message });
     }
   });
