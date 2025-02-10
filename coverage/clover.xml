@@ -1,8 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1739220114671" clover="3.2.0">
-  <project timestamp="1739220114672" name="All files">
-    <metrics statements="52" coveredstatements="47" conditionals="13" coveredconditionals="6" methods="6" coveredmethods="5" elements="71" coveredelements="58" complexity="0" loc="52" ncloc="52" packages="3" files="3" classes="3"/>
-    <package name="entity">
+<coverage generated="1739220388498" clover="3.2.0">
+  <project timestamp="1739220388499" name="All files">
+    <metrics statements="100" coveredstatements="86" conditionals="26" coveredconditionals="12" methods="12" coveredmethods="10" elements="138" coveredelements="108" complexity="0" loc="100" ncloc="100" packages="6" files="7" classes="7"/>
+    <package name="application.dto">
+      <metrics statements="24" coveredstatements="21" conditionals="13" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="AssignmentDto.ts" path="C:\Users\Usuario\Documents\programacion\microservicios\dispatch-service\src\application\dto\AssignmentDto.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+      <file name="CreateAssignmentDto.ts" path="C:\Users\Usuario\Documents\programacion\microservicios\dispatch-service\src\application\dto\CreateAssignmentDto.ts">
+        <metrics statements="18" coveredstatements="15" conditionals="13" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="25" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="26" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="27" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="28" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="29" count="1" type="cond" truecount="2" falsecount="1"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="1" type="cond" truecount="2" falsecount="1"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="1" type="cond" truecount="2" falsecount="1"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="application.mapper">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="AssignmentMapper.ts" path="C:\Users\Usuario\Documents\programacion\microservicios\dispatch-service\src\application\mapper\AssignmentMapper.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="application.service">
+      <metrics statements="21" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <file name="DispatchShipmentService.ts" path="C:\Users\Usuario\Documents\programacion\microservicios\dispatch-service\src\application\service\DispatchShipmentService.ts">
+        <metrics statements="21" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="35" count="5" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="43" count="5" type="stmt"/>
+        <line num="50" count="5" type="stmt"/>
+        <line num="52" count="4" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="domain.entity">
       <metrics statements="18" coveredstatements="13" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="2"/>
       <file name="Assignament.ts" path="C:\Users\Usuario\Documents\programacion\microservicios\dispatch-service\src\domain\entity\Assignament.ts">
         <metrics statements="18" coveredstatements="13" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="2"/>
@@ -26,7 +95,7 @@
         <line num="46" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="exceptions">
+    <package name="domain.exceptions">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="DomainError.ts" path="C:\Users\Usuario\Documents\programacion\microservicios\dispatch-service\src\domain\exceptions\DomainError.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -36,7 +105,7 @@
         <line num="5" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="service">
+    <package name="domain.service">
       <metrics statements="30" coveredstatements="30" conditionals="9" coveredconditionals="6" methods="2" coveredmethods="2"/>
       <file name="DispatchDomainService.ts" path="C:\Users\Usuario\Documents\programacion\microservicios\dispatch-service\src\domain\service\DispatchDomainService.ts">
         <metrics statements="30" coveredstatements="30" conditionals="9" coveredconditionals="6" methods="2" coveredmethods="2"/>
