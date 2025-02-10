@@ -1,4 +1,4 @@
-import { DispatchShipmentService } from "../../../../application/services/DispatchShipmentService";
+import { DispatchShipmentService } from "../../../../application/service/DispatchShipmentService";
 import { KafkaConsumer } from "../../../../infrastructure/messaging/KafkaConsumer";
 import { ShipmentCreatedConsumer } from "../../../../infrastructure/messaging/ShipmentCreatedConsumer";
 

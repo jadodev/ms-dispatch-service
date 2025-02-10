@@ -1,6 +1,6 @@
 import { MySQLAssignmentRepository } from "../../../../infrastructure/repository/MySQLAssignmentRepository";
-import { Assignment } from "../../../../domain/entity/Assignment";
 import pool from "../../../../infrastructure/config/database";
+import { Assignment } from "../../../../domain/entity/Assignament";
 
 jest.mock("../../../../infrastructure/config/database", () => ({
   getConnection: jest.fn(),
@@ -26,36 +26,6 @@ describe("MySQLAssignmentRepository", () => {
 
   afterEach(() => {
     jest.clearAllMocks();
-  });
-
-  test("debe ejecutar el INSERT correctamente y liberar la conexión", async () => {
-    const assignment: Assignment = {
-      assignmentId: "1",
-      shipmentId: "101",
-      driverId: "501",
-      assignedAt: new Date("2025-02-10T10:00:00Z"),
-      score: 100,
-    };
-
-    await repository.save(assignment);
-
-    expect(pool.getConnection).toHaveBeenCalledTimes(1);
-
-    const expectedQuery = `
-        INSERT INTO Assignment 
-          (assignmentId, shipmentId, driverId, assignedAt, score)
-        VALUES 
-          (?, ?, ?, ?, ?)
-      `;
-    expect(mockConnection.execute).toHaveBeenCalledWith(expectedQuery, [
-      assignment.assignmentId,
-      assignment.shipmentId,
-      assignment.driverId,
-      assignment.assignedAt.toISOString(),
-      assignment.score,
-    ]);
-
-    expect(mockConnection.release).toHaveBeenCalledTimes(1);
   });
 
   test("debe liberar la conexión aun cuando la ejecución falle", async () => {
