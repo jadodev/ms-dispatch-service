@@ -1,18 +1,12 @@
 import { DomainError } from "../exceptions/DomainError";
 
-/**
- * Represents the assignment of a shipment to a driver.
- */
 export class Assignment {
   public readonly assignmentId: string;
   public readonly shipmentId: string;
   public readonly driverId: string;
   public readonly assignedAt: Date;
-  public readonly score: number; // Valor resultante de la función objetivo
+  public readonly score: number;
 
-  /**
-   * Constructor privado para garantizar el uso de métodos de fábrica.
-   */
   private constructor(
     assignmentId: string,
     shipmentId: string,
@@ -39,13 +33,6 @@ export class Assignment {
     this.score = score;
   }
 
-  /**
-   * Factory method to create a new Assignment.
-   * @param shipmentId Identificador del shipment.
-   * @param driverId Identificador del conductor seleccionado.
-   * @param score Valor resultante de la función objetivo.
-   * @returns Una nueva instancia de Assignment.
-   */
   public static create(
     shipmentId: string,
     driverId: string,
