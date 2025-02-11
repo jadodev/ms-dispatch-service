@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AssignmentMapper = void 0;
 const AssignmentDto_1 = require("../dto/AssignmentDto");
 /**
- * Mapper to transform an Assignment domain entity into an AssignmentDto.
+ * Mapper para transformar una entidad Assignment en un AssignmentDto.
  */
 class AssignmentMapper {
     static toDto(assignment) {
