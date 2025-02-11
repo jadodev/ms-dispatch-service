@@ -2,7 +2,7 @@ import { Assignment } from "../../domain/entity/Assignament";
 import { AssignmentDto } from "../dto/AssignmentDto";
 
 /**
- * Mapper to transform an Assignment domain entity into an AssignmentDto.
+ * Mapper para transformar una entidad Assignment en un AssignmentDto.
  */
 export class AssignmentMapper {
   public static toDto(assignment: Assignment): AssignmentDto {
