@@ -1,5 +1,13 @@
 # ms-dispatch-service
 
+## Documentación de la API con Swagger
+
+La aplicación incluye documentación interactiva de la API generada con Swagger. Una vez que la aplicación esté en ejecución, puedes acceder a la documentación abriendo tu navegador y navegando a:
+
+**http://localhost:4050/api-doc**
+
+Asegúrate de que la aplicación se esté ejecutando en el puerto configurado para Swagger.
+
 ```plaintext
 \---src
     |   index.ts
